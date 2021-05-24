@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div class="mybox">
+    <div class="mybox2">
+        <h1>Registration form</h1>
+        <div class="inputContainer">
+            <span style="color: red">* required</span><br><br>
+            <div class="inputLabel">
+                <label>Full Name<span style="color: red">*</span></label>
+            </div>
+            <input class="Details" type="text" placeholder="Enter your name here">
+            <div class="inputLabel">
+                <label>Telephone No</label>
+            </div>
+            <input class="Details" type="text" placeholder="Enter your Telephone number here">
+            <div class="inputLabel">
+                <label>Email<span style="color: red">*</span></label>
+            </div>
+            <input class="Details" type="text" placeholder="Enter your email address here">
+            <div  class="inputLabel">
+                <label>Gender  </label>
+                <input type="radio" id="male" name="gender"> Male
+                <input type="radio" id="female" name="gender"> Female
+            </div>
+            <div class="inputLabel">
+                <label>Year of Study</label>
+                <select name="year" id="year" class="inputDrop">
+                    <option value="default">Year of study</option>
+                    <option value="first">2019/20</option>
+                    <option value="second">2018/19</option>
+                    <option value="third">2017/18</option>
+                    <option value="fourth">2016/17</option>
+                </select>
+            </div>
+            <div class="inputLabel">
+                <label>Suggestions</label>
+            </div>
+            <textarea name="text" rows="3" cols="46" placeholder="Enter your suggestions here"></textarea>
+
+            <div>
+                <button class="button" type="submit" form="nameform" value="Submit">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
