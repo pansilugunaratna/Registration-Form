@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link href="myStyle.css" rel="stylesheet">
 </head>
 <body>
 <div class="mybox">
@@ -14,23 +14,30 @@
             <div class="inputLabel">
                 <label>Full Name<span style="color: red">*</span></label>
             </div>
-            <input class="Details" type="text" placeholder="Enter your name here">
+            <label for="name"></label>
+            <input class="Details" id="name" placeholder="Enter your name here" type="text">
             <div class="inputLabel">
                 <label>Telephone No</label>
             </div>
-            <input class="Details" type="text" placeholder="Enter your Telephone number here">
+            <label for="tele"></label>
+            <input class="Details" id="tele" placeholder="Enter your Telephone number here" type="text">
             <div class="inputLabel">
                 <label>Email<span style="color: red">*</span></label>
             </div>
-            <input class="Details" type="text" placeholder="Enter your email address here">
-            <div  class="inputLabel">
-                <label>Gender  </label>
-                <input type="radio" id="male" name="gender"> Male
-                <input type="radio" id="female" name="gender"> Female
+            <label for="address"></label>
+            <input class="Details" id="address" placeholder="Enter your email address here" type="text">
+            <div class="inputLabel">
+                <div class="radio-set">
+                    <label>Gender</label>
+                    <input id="male" name="gender" type="radio">
+                    <label for="male">Male</label>
+                    <input id="female" name="gender" type="radio">
+                    <label for="female">Female</label>
+                </div>
             </div>
             <div class="inputLabel">
-                <label>Year of Study</label>
-                <select name="year" id="year" class="inputDrop">
+                <label for="year">Year of Study</label>
+                <select class="inputDrop default" id="year" name="year">
                     <option value="default">Year of study</option>
                     <option value="first">2019/20</option>
                     <option value="second">2018/19</option>
@@ -41,19 +48,22 @@
             <div class="inputLabel">
                 <label>Suggestions</label>
             </div>
-            <textarea name="text" rows="3" cols="46" placeholder="Enter your suggestions here"></textarea>
+            <label for="suggestion"></label>
+            <textarea cols="46" id="suggestion" name="text" placeholder="Enter your suggestions here"
+                      rows="3"></textarea>
 
             <div>
-                <button class="button" type="submit" form="nameform" value="Submit" onclick="myFunction()">Submit</button>
+                <button class="button" onclick="myFunction()" type="submit" value="Submit">Submit
+                </button>
             </div>
         </div>
 
     </div>
 </div>
-    <script>
-        function myFunction() {
-            alert("Registration Successful!");
-        }
-    </script>
+<script>
+    function myFunction() {
+        alert("Registration Successful!");
+    }
+</script>
 </body>
 </html>

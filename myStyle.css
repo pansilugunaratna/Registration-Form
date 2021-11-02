@@ -1,74 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
-body{
-    padding: 0%;
-    margin: 0%;
+
+body {
+    padding: 0;
+    margin: 0;
 }
-.mybox{
+
+.mybox {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(to bottom right, rgb(217, 255, 0), rgb(25, 228, 42));
     padding-top: 50px;
 }
-.mybox2{
-    height: 500px;
+
+.mybox2 {
+    height: 510px;
     width: 400px;
     background-color: rgb(255, 255, 255);
-    margin: auto;
+    margin: 5% auto;
     border-radius: 6px;
     padding-top: 2px;
 }
-.inputContainer{
+
+.inputContainer {
     margin: auto;
     width: 350px;
 }
-h1{
+
+h1 {
     text-align: center;
     border-bottom: 1px solid darkgrey;
     font-family: 'Signika', sans-serif;
     font-weight: 800;
 }
-input{
+
+input {
     border: none;
     border-bottom: 1px solid lightgray;
     height: 20px;
     outline: none;
     padding-bottom: 5px;
 }
-input:hover{
+
+input:hover {
     border-bottom: 2px solid lawngreen;
 }
-.Details{
+
+.Details {
     width: 338px;
 }
-.inputLabel{
+
+.inputLabel {
     font-size: 15px;
     font-family: 'Signika', sans-serif;
     padding-top: 10px;
     width: 250px;
 }
-::placeholder{
+
+::placeholder {
     font-size: 13px;
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
     color: lightgrey;
 }
+
+.radio-set {
+    display: flex;
+    align-items: center;
+}
+
+.default {
+    font-size: 13px;
+    font-family: Calibri, sans-serif;
+    color: lightgrey;
+}
+
+textarea {
+    width: 338px;
+    border: 1px solid lightgray;
+}
+
+textarea:hover {
+    border: 2px solid lawngreen;
+}
+
 .button {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
     background-image: linear-gradient(to bottom right, rgb(217, 255, 0), rgb(25, 228, 42));
-    border: none;
+    border: 1px solid rgb(217, 255, 0);
     color: darkslateblue;
-    padding: 10px;
+    padding: 6px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 20px;
     float: right;
+    font-family: 'Signika', sans-serif;
 }
-button:hover{
+
+button:hover {
     border: 1px solid grey;
 }
-.inputDrop{
+
+.inputDrop {
     border: 1px solid lightgrey;
     color: grey;
     outline: none;
